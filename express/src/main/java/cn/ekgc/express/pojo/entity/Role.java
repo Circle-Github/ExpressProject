@@ -14,6 +14,7 @@ public class Role implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private Long id;                        // 主键
 	private String name;                    // 角色名称
+	private Integer status;                 // 状态：0-禁用，1-启用
 	private List<Menu> menuList;            // 角色拥有的菜单列表
 	private Date createTime;                // 创建时间
 	private Date updateTime;                // 修改时间
@@ -32,6 +33,14 @@ public class Role implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
 	}
 
 	public List<Menu> getMenuList() {

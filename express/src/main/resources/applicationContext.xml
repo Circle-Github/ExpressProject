@@ -44,6 +44,12 @@
 		<property name="mapperLocations" value="classpath*:/mapper/*.Mapper.xml"/>
 		<!-- 设置实体类别名 -->
 		<property name="typeAliasesPackage" value="cn.ekgc.express.pojo.entity"/>
+		<!-- 配置 PageHelper 插件 -->
+		<property name="plugins">
+			<array>
+				<bean class="com.github.pagehelper.PageInterceptor"></bean>
+			</array>
+		</property>
 	</bean>
 	<!-- 配置 Spring 管理 Mybatis 核心对象 SQLSessionFactoryBean 信息 [END] -->
 

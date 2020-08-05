@@ -65,6 +65,14 @@
 		</dependency>
 		<!-- 配置 Druid 数据库连接池依赖关系 [END] -->
 
+		<!-- 配置 PageHelper 插件依赖关系 [BEGIN] -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>5.2.0</version>
+		</dependency>
+		<!-- 配置 PageHelper 插件依赖关系 [END] -->
+
 		<!-- 配置 JSON 转换依赖关系 [BEGIN] -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
